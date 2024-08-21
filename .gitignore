@@ -1,0 +1,5 @@
+#ignore the file containing Open API credentials
+*.env
+*.pyc
+venv/
+

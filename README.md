@@ -9,7 +9,8 @@ Checkout out the deployed app here: [http://ec2-40-177-46-181.ca-west-1.compute.
 
 FinRAGify is a user-friendly research tool designed to simplify the process of retrieving information from earnings calls of publicly traded companies. Users can select a company from a limited list (available for this proof-of-concept) and ask questions from a set of presets or create custom queries, such as *"Were any new products launched?"* or *"What are the company’s future plans and outlook?"* The app then searches (using embeddings) the last two years (8 quarters) of quarterly earnings calls by leveraging **RAG (Retrieval-Augmented Generation)** technology, a machine learning technique that combines retrieval-based and generative models (GPT, LLMs), to find and present contextually relevant answers.
 
-<p align="center"> <img width="600" src="https://raw.githubusercontent.com/apsinghAnalytics/FinRAGify_App/main/finragify_UI.png"> </p>
+<p align="center"> <img width="800" src="https://raw.githubusercontent.com/apsinghAnalytics/FinRAGify_App/main/images/finragify_UI.gif"> </p>
+
 
 
 ## Features
@@ -28,13 +29,6 @@ FinRAGify is a user-friendly research tool designed to simplify the process of r
 - .env: Configuration file for storing your OpenAI and FinancialModelingPrep API keys:  
 - dockerfile: The docker file to create the docker image if the user prefers to run the app by containerizing and deploying via Docker.
 - lean_finragify: The repo for the light weight version of this app, which uses the [Cohere Rerank API,](https://docs.cohere.com/reference/rerank) instead of the open source [*CrossEncoder model (ms-marco-MiniLM-L-6-v2)*](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2) for reranking the retrieved data chunks. This *reduces the RAM requirements from 300- 600 MB to about 150-300 MB*, which can be very helpful in deploying the app to smaller cloud compute instances like the AWS EC2 t3.micro. Please refer to the **readme** inside for installation instructions of that light version. 
-
-## Installation
-
-### Method 1: 
-
-
-Here's the rewritten instructions in a format compatible for a markup file:
 
 ## Installation
 
@@ -87,6 +81,8 @@ streamlit run main.py
 ```
 
 ### Method 2: Docker Containerization
+
+**Note:** Using a dockerized container to deploy this app requires about 200 MB more in terms of RAM
 
 1. Copy the `Dockerfile` and `.env` file to the same folder on your local machine.
 

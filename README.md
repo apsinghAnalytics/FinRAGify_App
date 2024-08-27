@@ -28,7 +28,7 @@ FinRAGify is a user-friendly research tool designed to simplify the process of r
 - requirements.txt: A list of required Python packages for the project.
 - .env: Configuration file for storing your OpenAI and FinancialModelingPrep API keys:  
 - dockerfile: The docker file to create the docker image if the user prefers to run the app by containerizing and deploying via Docker.
-- lean_finragify: The repo for the light weight version of this app, which uses the [Cohere Rerank API,](https://docs.cohere.com/reference/rerank) instead of the open source [*CrossEncoder model (ms-marco-MiniLM-L-6-v2)*](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2) for reranking the retrieved data chunks. This *reduces the RAM requirements from 300- 600 MB to about 150-300 MB*, which can be very helpful in deploying the app to smaller cloud compute instances like the AWS EC2 t3.micro. Please refer to the **readme** inside for installation instructions of that light version. 
+- lean_finragify: The repo for the light weight version of this app, which uses the [Cohere Rerank API,](https://docs.cohere.com/reference/rerank) instead of the open source [*CrossEncoder model (ms-marco-MiniLM-L-6-v2)*](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2) for reranking the retrieved data chunks. This *reduces the RAM requirements from 300- 600 MB to about 150-300 MB*, which can be very helpful in deploying the app to smaller cloud compute instances like the AWS EC2 t3.micro. Please refer to the [readme](https://github.com/apsinghAnalytics/FinRAGify_App/blob/main/lean_finragify/README.md) inside for installation instructions of that light version. 
 
 ## Installation
 

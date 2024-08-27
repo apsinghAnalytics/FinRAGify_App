@@ -1,5 +1,6 @@
-#ignore the file containing Open API credentials
+#ignore the file containing the API credentials (.env), the cache files (.pyc), the virtual environments, and the .tar file containing the docker images
 *.env
 *.pyc
 venv/
+*.tar 
 

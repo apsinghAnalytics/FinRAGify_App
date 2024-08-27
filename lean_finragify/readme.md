@@ -86,3 +86,7 @@ streamlit run main.py
 ### Method 2: Docker Containerization
 
 Same as that of the main app, so please refer to this [readme](https://github.com/apsinghAnalytics/FinRAGify_App/blob/main/README.md). *Ensure that the docker file in this repo is used to create the docker image, and that the .env file used contains the Cohere API keys.*
+
+The memory usage for this lean version when deployed using Docker is in the range of 150 -300 MB:
+
+<p align="center"> <img width="600" src="https://raw.githubusercontent.com/apsinghAnalytics/FinRAGify_App/main/images/lean_finragify_dockerMemoryReq.png"> </p>

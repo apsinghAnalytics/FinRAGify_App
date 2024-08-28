@@ -1,5 +1,7 @@
 *This repo is for the light weight version of the FinRAGify_APP, which uses the [Cohere Rerank API,](https://docs.cohere.com/reference/rerank) instead of the open source [*CrossEncoder model (ms-marco-MiniLM-L-6-v2)*](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2) for reranking the retrieved data chunks. This *reduces the RAM requirements from 300- 600 MB to about 150-300 MB*, which can be very helpful in deploying the app to smaller free-tier cloud instances like the AWS EC2 t3.micro*
 
+This readme provides a brief overview off the app, focusing on the app installation instructions. For more details, please checkout the [blog here](https://apsinghanalytics.github.io/2024/08/26/FinRAGifyApp/) 
+
 
 ## Project Structure
 
@@ -89,4 +91,4 @@ Same as that of the main app, so please refer to this [readme](https://github.co
 
 The memory usage for this lean version when deployed using Docker is in the range of 150 -300 MB:
 
-<p align="center"> <img width="600" src="https://raw.githubusercontent.com/apsinghAnalytics/FinRAGify_App/main/images/lean_finragify_dockerMemoryReq.png"> </p>
+<p align="center"> <img width="1000" src="https://raw.githubusercontent.com/apsinghAnalytics/FinRAGify_App/main/images/lean_finragify_dockerMemoryReq.png"> </p>

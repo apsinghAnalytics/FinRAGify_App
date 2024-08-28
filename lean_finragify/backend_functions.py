@@ -173,6 +173,9 @@ def process_transcripts(transcripts):
     
     docs = text_splitter.create_documents(transcript_contents, metadatas=transcript_metadata) # text splitter breaks transcript data to chunks of data in langChain document type
     
+    # Filter out chunks with less than 100 characters
+    docs = [doc for doc in docs if len(doc.page_content) > 100]
+
     embeddings = OpenAIEmbeddings()
     vectorstore_openai = FAISS.from_documents(docs, embeddings)   #Vectorestore created with FAISS (Facebook AI similarity search) using openAI embeddings
     

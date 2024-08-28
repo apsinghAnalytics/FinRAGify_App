@@ -2,6 +2,7 @@
 
 Checkout out the deployed app here: [http://ec2-40-177-46-181.ca-west-1.compute.amazonaws.com:8501](http://ec2-40-177-46-181.ca-west-1.compute.amazonaws.com:8501)
 
+This readme provides a brief overview off the app, focusing on the app installation instructions. For more details, please checkout the [blog here](https://apsinghanalytics.github.io/2024/08/26/FinRAGifyApp/) 
 
 # FinRAGify_App: 
 
